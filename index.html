@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="src/model.js"></script>
+    <script src="src/index.js"></script>
+
+    <title>Music Player Web App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div
+      class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white"
+    >
+      <form>
+        <h1>
+          <div
+            class="form-group custom-control custom-switch custom-switch-adaptive"
+          >
+            <input type="checkbox" class="custom-control-input" id="record" />
+            <label class="custom-control-label" for="record">Record</label>
+          </div>
+        </h1>
+      </form>
+
+      <div class="alert alert-primary" role="alert" id="debug">
+        Not recording yet...
+      </div>
+    </div>
+    <br />
+    <p>Value: <span id="valueDisplay">0</span></p>
+    <br />
+    <br />
+      <h1>Music Player</h1>
+      <audio id="myAudio" controls>
+        <source src="src/aaa.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>
